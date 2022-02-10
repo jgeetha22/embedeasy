@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+ 
+}
+
+.centerDiv {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  min-height: 100vh;  
+  
+  justify-content: center;
+  text-align: center;
+  background-color: #5cdb95;
+}
+.centerDiv div {
+  flex: 0.75;
+  border: 4px solid #05386b;
+  font-size: 5vw;
+  color: white;
+  letter-spacing: 3px;
+}
+
+
+.button {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  border: 2.5px solid #05386b;
+  border-radius: 5px;
+  padding: 5px;
+  color: #05386b;
+  font-weight: 500;
+}
+.button:hover{
+  background-color: #05386b;
+  color: white;
+  
+}
+
+.popup {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  background: #05386b;
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+  height: 75%;
+}
+
+:target {
+  position:absolute;
+  visibility: visible;
+  opacity: 1;
+  bottom: 5%;
+  right: 5%;
+  border-radius: 5px;
+  height: 75%;
+
+}
+.frame {
+  position: relative;
+height: 100%;
+width: 100%;
+bottom: 10%;
+}
+
+.close {
+ left: 5%;
+  position: relative;
+ font-size: 5vh;
+ color: white;
+ z-index: 1;
+}
+
+@media only screen and (max-width: 750px) {
+  :target {
+    position:absolute;
+    visibility: visible;
+    opacity: 1;
+    bottom: 0%;
+    right: 0%;
+    border-radius: 5px;
+    height: 100vh;
+    width: 100vw;
+  }
+  .frame {
+    position: relative;
+    bottom: 7.5%;
+  height: 100%;
+  width: 100%;
+  }
+  
+}
+
+
+
