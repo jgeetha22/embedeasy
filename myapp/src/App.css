@@ -1,7 +1,12 @@
+
 .App {
   text-align: center;
  
 }
+.hoveredClass{
+  border: 5px solid plum !important;
+}
+
 
 .centerDiv {
   display: flex;
@@ -19,6 +24,17 @@
   font-size: 5vw;
   color: white;
   letter-spacing: 3px;
+}
+
+.DIV{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  min-height: 100vh;  
+  
+  justify-content: center;
+  text-align: center;
+  background-color: #5cdb95;
 }
 
 
@@ -93,6 +109,5 @@ bottom: 10%;
   }
   
 }
-
 
 
